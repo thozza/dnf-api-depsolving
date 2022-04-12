@@ -1,0 +1,64 @@
+{
+  "transactions": [
+    {
+      "package-specs": [
+        "@Fedora Cloud Server",
+        "chrony",
+        "systemd-udev",
+        "selinux-policy-targeted",
+        "langpacks-en",
+        "kernel",
+        "dracut-config-generic",
+        "grub2-pc"
+      ],
+      "exclude-specs": [
+        "dracut-config-rescue",
+        "etables",
+        "firewalld",
+        "geolite2-city",
+        "geolite2-country",
+        "gobject-introspection",
+        "plymouth",
+        "zram-generator-defaults"
+      ],
+      "repos": [
+        "fedora",
+        "fedora-modular",
+        "updates",
+        "updates-modular"
+      ]
+    },
+    {
+      "package-specs": [
+        "kernel"
+      ],
+      "exclude-specs": [],
+      "repos": [
+        "fedora",
+        "fedora-modular",
+        "updates",
+        "updates-modular"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "id": "fedora",
+      "baseurl": "https://rpmrepo.osbuild.org/v2/mirror/public/f35/f35-x86_64-fedora-20220106/"
+    },
+    {
+      "id": "fedora-modular",
+      "baseurl": "https://rpmrepo.osbuild.org/v2/mirror/public/f35/f35-x86_64-fedora-modular-20220106/"
+    },
+    {
+      "id": "updates",
+      "baseurl": "https://rpmrepo.osbuild.org/v2/mirror/public/f35/f35-x86_64-updates-released-20220401/"
+    },
+    {
+      "id": "updates-modular",
+      "baseurl": "https://rpmrepo.osbuild.org/v2/mirror/public/f35/f35-x86_64-updates-released-modular-20220401/"
+    }
+  ],
+  "module_platform_id": "platform:f35",
+  "arch": "x86_64"
+}

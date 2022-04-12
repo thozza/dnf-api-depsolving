@@ -1,0 +1,106 @@
+{
+  "transactions": [
+    {
+      "package-specs": [
+        "@core",
+        "authselect-compat",
+        "chrony",
+        "cloud-init",
+        "cloud-utils-growpart",
+        "cockpit-system",
+        "cockpit-ws",
+        "dhcp-client",
+        "dnf",
+        "dnf-utils",
+        "dosfstools",
+        "NetworkManager",
+        "net-tools",
+        "nfs-utils",
+        "oddjob",
+        "oddjob-mkhomedir",
+        "psmisc",
+        "python3-jsonschema",
+        "qemu-guest-agent",
+        "redhat-release",
+        "redhat-release-eula",
+        "rsync",
+        "tar",
+        "tcpdump",
+        "yum",
+        "dracut-config-generic",
+        "grub2-pc",
+        "dracut-config-generic",
+        "efibootmgr",
+        "grub2-efi-x64",
+        "shim-x64",
+        "insights-client",
+        "subscription-manager-cockpit",
+        "kernel"
+      ],
+      "exclude-specs": [
+        "aic94xx-firmware",
+        "alsa-firmware",
+        "alsa-lib",
+        "alsa-tools-firmware",
+        "biosdevname",
+        "dnf-plugin-spacewalk",
+        "dracut-config-rescue",
+        "fedora-release",
+        "fedora-repos",
+        "firewalld",
+        "iprutils",
+        "ivtv-firmware",
+        "iwl100-firmware",
+        "iwl1000-firmware",
+        "iwl105-firmware",
+        "iwl135-firmware",
+        "iwl2000-firmware",
+        "iwl2030-firmware",
+        "iwl3160-firmware",
+        "iwl3945-firmware",
+        "iwl4965-firmware",
+        "iwl5000-firmware",
+        "iwl5150-firmware",
+        "iwl6000-firmware",
+        "iwl6000g2a-firmware",
+        "iwl6000g2b-firmware",
+        "iwl6050-firmware",
+        "iwl7260-firmware",
+        "langpacks-en",
+        "libertas-sd8686-firmware",
+        "libertas-sd8787-firmware",
+        "libertas-usb8388-firmware",
+        "nss",
+        "plymouth",
+        "rng-tools",
+        "udisks2"
+      ],
+      "repos": [
+        "appstream",
+        "baseos"
+      ]
+    },
+    {
+      "package-specs": [
+        "firewalld"
+      ],
+      "exclude-specs": [],
+      "repos": [
+        "baseos",
+        "appstream"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "id": "baseos",
+      "baseurl": "https://rpmrepo.osbuild.org/v2/mirror/rhvpn/el9/el9-x86_64-baseos-n9.0-20220401/"
+    },
+    {
+      "id": "appstream",
+      "baseurl": "https://rpmrepo.osbuild.org/v2/mirror/rhvpn/el9/el9-x86_64-appstream-n9.0-20220401/"
+    }
+  ],
+  "module_platform_id": "platform:el9",
+  "arch": "x86_64"
+}
